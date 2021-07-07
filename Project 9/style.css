@@ -1,0 +1,84 @@
+.body{
+    width: 100vw;
+    height: 10vh;
+}
+.container{
+    position: relative;
+	display: flex;
+	flex-wrap: wrap; 
+    margin-top: 20%;
+	justify-content: center;
+	align-items: center;
+}
+.rec1{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background:#ef476f;
+    animation: rec1 2000ms infinite both ;
+    
+}
+.rec2{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #06d6a0;
+    animation: rec2 2000ms infinite both ;
+}
+.rec3{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #fca311;
+    animation: rec3 2000ms infinite both ;
+}
+.rec4{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8338ec;
+    animation: rec4 2000ms infinite both ;
+}
+
+@keyframes rec1{
+    0%{
+        background: #ef476f;
+    }
+    100%{
+        background: #fca311;
+    }
+}
+@keyframes rec2{
+    0%{
+        background: #06d6a0;
+    }
+    100%{
+        background: #ef476f;
+    }
+}
+@keyframes rec3{
+    0%{
+        background:  #fca311;
+    }
+    100%{
+        background: #8338ec;
+    }
+}
+@keyframes rec4{
+    0%{
+        background: #8338ec;
+    }
+    100%{
+        background: #06d6a0;
+    }
+}

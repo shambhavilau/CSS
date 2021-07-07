@@ -1,0 +1,30 @@
+body{
+    margin: 100px;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+  }
+.box{
+    width: 300px;
+    height: 300px;
+    background: #fca311;
+    transition-duration: 500ms;
+    transition-property: background, transform; 
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+    /* all the above can be written as follows:
+    transition: 1s 500ms background ease-in;
+    the first time is duration
+    the second time is delay
+    */
+    /*tells which property to transition
+    if it is not mentioned then it will transition everything els ejust the one mentioned
+    OR
+    use->  transition-property: all;  but avoid suing this since it consumes lot of memory
+    */
+}
+.box:hover{
+    background: #d62828;
+    transform: rotate(45deg);
+}

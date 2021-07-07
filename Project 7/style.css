@@ -1,0 +1,57 @@
+.body{
+height: 10vh;
+width: 10vw;
+}
+.box{
+    height: 80px;
+    width: 80px;
+    background: #480ca8;
+    position: relative;
+    /*animation-name: square;
+    animation-duration: 5000ms;
+    animation-timing-function: linear;
+    animation-delay: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-play-state: running; 
+    Above actions can be done in single line as follows
+    */
+    animation: square 5000ms linear 1000ms infinite alternate backwards running
+    
+}
+@keyframes square{
+    /* METHOD 1
+    from {background-color: #480ca8;}
+    to {background-color: #ff006e;} 
+    METHOD 2
+    */
+    0% {
+        background-color: #480ca8;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: #ff006e;
+        left: 500px;
+        top: 0px;
+    } 
+    50% {
+        background-color: #fb5607;
+        left: 500px;
+        top: 500px;
+        border-radius: 50%;
+    } 
+    75% {
+        background-color: #80b918;
+        left: 0px;
+        top: 500px;
+    } 
+    100% {
+        background-color: #007f5f;
+        left: 0px;
+        top: 0px;
+        border-radius: 0%;
+    } 
+    
+}

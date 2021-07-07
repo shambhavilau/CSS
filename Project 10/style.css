@@ -1,0 +1,136 @@
+.body{
+    width: 100vw;
+    height: 10vh;
+}
+.container{
+    position: relative;
+	display: flex;
+	flex-wrap: wrap; 
+    margin-top: 20%;
+	justify-content: center;
+	align-items: center;
+}
+.rec0, .rec8{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    background: #8338ec;
+    animation: rec0 2000ms infinite both 0ms;
+}
+
+.rec1,.rec7{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background:#ef476f;
+    border-radius: 15px;
+    animation: rec1 2000ms infinite both 500ms ;
+}
+.rec2,.rec6{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #06d6a0;
+    border-radius: 15px;
+    animation: rec2 2000ms infinite both 1000ms;
+}
+.rec3, .rec5{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #fca311;
+    border-radius: 15px;
+    animation: rec3 2000ms infinite both 1500ms;
+}
+.rec4{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #8338ec;
+    border-radius: 15px;
+    animation: rec4 2000ms infinite both 2000ms;
+}
+@keyframes rec0{
+    0%{
+        background: #ef476f;
+        height: 20px;
+    }
+    50%{
+        background: #fca311;
+        height: 60px;
+    }
+    100%{
+        background: #ef476f;
+        height: 20px;
+    }
+}
+@keyframes rec1{
+    0%{
+        background: #d90429;
+        height: 20px;
+    }
+    50%{
+        background: #56cfe1;
+        height: 80px;
+    }
+    100%{
+        background: #d90429;
+        height: 20px;
+    }
+}
+@keyframes rec2{
+    0%{
+        background: #06d6a0;
+        height: 20px;
+    }
+    50%{
+        background: #ef476f;
+        height: 100px;
+    }
+    100%{
+        background: #06d6a0;
+        height: 20px;
+    }
+}
+@keyframes rec3{
+    0%{
+        background:  #fca311;
+        height: 20px;
+    }
+    50%{
+        background: #8338ec;
+        height: 120px;
+    }
+    100%{
+        background: #fca311;
+        height: 20px;
+    }
+}
+@keyframes rec4{
+    0%{
+        background: #8338ec;
+        height: 20px;
+    }
+    50%{
+        background: #06d6a0;
+        height: 140px;
+    }
+    1000%{
+        background: #8338ec;
+        height: 20px;
+    }
+}
+
